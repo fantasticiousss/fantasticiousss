@@ -34,24 +34,6 @@
             white-space: nowrap;
         }
 
-        .button-container a {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 15px 40px;
-            background-color: #1E1E1E;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            margin: 10px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .button-container a:hover {
-            background-color: #333333;
-            transform: scale(1.1);
-        }
-
         /* Page Styling */
         .page {
             position: absolute;
@@ -76,74 +58,12 @@
             max-width: 45%;
         }
 
-        .go-back-button {
-            background-color: #1E1E1E;
-            color: white;
-            border-radius: 50px;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease-in-out;
-            margin-top: 30px;
-        }
-
-        .go-back-button:hover {
-            background-color: #333333;
-            transform: scale(1.1);
-        }
-
         .logo {
             width: 150px;
             position: absolute;
             top: 30px;
             left: 10%;
             z-index: 1000;
-        }
-
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            right: 5%;
-            top: 50%;
-            transform: translateY(-50%);
-            gap: 20px;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .image-container img {
-            width: 300px;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .image-container img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Expanded Image */
-        .expanded {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.8); /* Scale smaller for smaller image */
-            z-index: 1001;
-            width: 60%; /* Adjust width for smaller image */
-            height: auto;
-            object-fit: contain;
-            cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-        }
-
-        .expanded.shrink {
-            transform: translate(-50%, -50%) scale(0.2);
-            opacity: 0;
         }
 
         @media (max-width: 768px) {
@@ -161,28 +81,6 @@
             p {
                 font-size: 1rem;
             }
-
-            .button-container a {
-                font-size: 1rem;
-                padding: 10px 30px;
-            }
-
-            img {
-                width: 150px;
-                height: 100px;
-            }
-
-            .image-container {
-                width: 90%;
-                align-items: center;
-                height: auto;
-                margin-top: 20px;
-            }
-
-            .image-container img {
-                width: 200px;
-                height: 150px;
-            }
         }
     </style>
 </head>
@@ -196,84 +94,8 @@
         <div class="page-content">
             <h1>fantasticiousss</h1>
             <p>this is it, show them what we're made of.</p>
-
-            <div class="button-container" style="margin-top: 20px;">
-                <a href="#" id="showcase-btn">showcase</a>
-                <a href="about.html">about me</a>
-                <a href="education.html">education</a>
-                <a href="socials.html">socials</a>
-            </div>
         </div>
     </div>
-
-    <!-- Showcase Page Content -->
-    <div id="showcase-page" class="page" style="display: none;">
-        <img src="https://cdn.discordapp.com/attachments/780349296191995924/1354564185710792824/neo_4_-removebg-preview.png?ex=67e5bfb4&is=67e46e34&hm=5a868f9b61dc60d26168bbb0cfd40192448d292fa51d4d2b108777def09dd748&" 
-            alt="Neo Studios Logo" class="logo">
-
-        <div class="page-content">
-            <h1>showcase of my work</h1>
-            <p>this is where we show what we’ve been working on!</p>
-
-            <a href="#" class="go-back-button" id="go-back-btn">Go Back</a>
-        </div>
-
-        <div class="image-container">
-            <img src="https://cdn.discordapp.com/attachments/1335720897818005596/1352728291403890698/image.png?ex=67e65225&is=67e500a5&hm=7de413a1b0ceba9f4d1afd49998e1e9131dfa44b9bdb175923980e3bae6da062&" alt="Image 1" class="image">
-            <img src="https://cdn.discordapp.com/attachments/1335720897818005596/1352728291403890698/image.png?ex=67e65225&is=67e500a5&hm=7de413a1b0ceba9f4d1afd49998e1e9131dfa44b9bdb175923980e3bae6da062&" alt="Image 2" class="image">
-            <img src="https://cdn.discordapp.com/attachments/1335720897818005596/1352728291403890698/image.png?ex=67e65225&is=67e500a5&hm=7de413a1b0ceba9f4d1afd49998e1e9131dfa44b9bdb175923980e3bae6da062&" alt="Image 3" class="image">
-            <img src="https://cdn.discordapp.com/attachments/1335720897818005596/1352728291403890698/image.png?ex=67e65225&is=67e500a5&hm=7de413a1b0ceba9f4d1afd49998e1e9131dfa44b9bdb175923980e3bae6da062&" alt="Image 4" class="image">
-            <img src="https://cdn.discordapp.com/attachments/1335720897818005596/1352728291403890698/image.png?ex=67e65225&is=67e500a5&hm=7de413a1b0ceba9f4d1afd49998e1e9131dfa44b9bdb175923980e3bae6da062&" alt="Image 5" class="image">
-        </div>
-    </div>
-
-    <script>
-        const showcaseButton = document.getElementById('showcase-btn');
-        const mainPage = document.getElementById('main-page');
-        const showcasePage = document.getElementById('showcase-page');
-        const goBackButton = document.getElementById('go-back-btn');
-
-        showcaseButton.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            mainPage.style.opacity = '0';
-            setTimeout(() => {
-                mainPage.style.display = 'none';
-                showcasePage.style.display = 'flex';
-                setTimeout(() => {
-                    showcasePage.style.opacity = '1';
-                }, 10);
-            }, 500);
-        });
-
-        goBackButton.addEventListener('click', () => {
-            showcasePage.style.opacity = '0';
-            setTimeout(() => {
-                showcasePage.style.display = 'none';
-                mainPage.style.display = 'flex';
-                setTimeout(() => {
-                    mainPage.style.opacity = '1';
-                }, 10);
-            }, 500);
-        });
-
-        const images = document.querySelectorAll('.image');
-        images.forEach(image => {
-            image.addEventListener('click', (e) => {
-                const expandedImage = document.createElement('img');
-                expandedImage.src = image.src;
-                expandedImage.classList.add('expanded');
-
-                document.body.appendChild(expandedImage);
-
-                expandedImage.addEventListener('click', () => {
-                    expandedImage.classList.add('shrink');
-                    setTimeout(() => {
-                        expandedImage.remove();
-                    }, 400);
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
